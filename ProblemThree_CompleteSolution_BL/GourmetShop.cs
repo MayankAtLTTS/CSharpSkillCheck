@@ -11,5 +11,26 @@ namespace ProblemThree_CompleteSolution_BL
         public abstract double PayPerPiece(int quantity);
         public abstract double PayPerWeight(int weight);
 
+
+        public int ItemCode
+        {
+            get; set;    
+        }
+        public string ItemName
+        {
+            get; set;
+        }
+        public Dictionary<int,double> ItemPrice
+        {
+            get; set;
+        }
+        GourmetShop(int iCode, string iName)
+        {
+            ItemCode = iCode;
+            ItemName = iName;
+        }
+        public GourmetShop()
+        { }
+
     }
 }

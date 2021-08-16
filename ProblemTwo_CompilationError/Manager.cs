@@ -15,7 +15,7 @@ namespace ProblemTwo_CompilationError
         {
             DirectReports = drEmployeesLst;
             CostCode = cCode;
-
+            
         }
 
         public List<string> GetMyReports()

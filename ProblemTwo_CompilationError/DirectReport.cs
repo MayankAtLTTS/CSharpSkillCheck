@@ -8,8 +8,7 @@ namespace ProblemTwo_CompilationError
 {
     class DirectReport : Employee
     {
-        private object p;
-        private string v;
+       
 
         public Employee ReportsTo { get; set; }
         public string ProjectCode { get; set; }
