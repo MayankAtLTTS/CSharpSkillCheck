@@ -21,7 +21,7 @@ namespace ProblemThree_CompleteSolution
             int quantityToBuy = 2;
             int quantityInGrams = 200;
             Console.WriteLine("The total cost for {0} packets of {1} is {2}/- INR", quantityToBuy,gosObj.ItemName,gosObj.PayPerPiece(quantityToBuy));
-            Console.WriteLine("The total cost for {0} grams of {1} is {2}/- INR", quantityInGrams, gosTwoObj.ItemName, gosTwoObj.PayPerPiece(quantityToBuy));
+            Console.WriteLine("The total cost for {0} grams of {1} is {2}/- INR", quantityInGrams, gosTwoObj.ItemName, gosTwoObj.PayPerWeight(quantityToBuy));
 
            
             //var coffeePriceDict = new Dictionary<int, double>();

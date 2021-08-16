@@ -13,16 +13,30 @@ namespace ProblemThree_CompleteSolution_BL
 
         
 
-        public GourmetOrganicShop(int iCode, string iName, Dictionary<int,double> iPrice) { }
+        public GourmetOrganicShop(int iCode, string iName, Dictionary<int,double> iPrice):base(iCode,iName) { ItemPrice = iPrice; }
 
         public override double PayPerPiece(int quantity)
         {
-            throw new NotImplementedException();
+            double total = 0;
+            int count;
+            if (quantity == 1)
+            {
+                return ItemPrice[quantity];
+            }
+            else
+            {
+                count = quantity;
+                while (count != 0)
+                {   
+                    total += ItemPrice[quantity];
+                    count--;
+                }return total;
+            }
         }
 
         public override double PayPerWeight(int weight)
         {
-            throw new NotImplementedException();
+            return ItemPrice[weight];
         }
 
         public double TaxOnTotalBill()

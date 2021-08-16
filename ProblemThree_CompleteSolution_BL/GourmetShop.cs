@@ -24,7 +24,7 @@ namespace ProblemThree_CompleteSolution_BL
         {
             get; set;
         }
-        GourmetShop(int iCode, string iName)
+        public GourmetShop(int iCode, string iName)
         {
             ItemCode = iCode;
             ItemName = iName;
