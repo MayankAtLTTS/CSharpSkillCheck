@@ -25,10 +25,14 @@ namespace ProblemTwo_CompilationError
             Manager manEmp = new Manager(1001, "Fred", 10, DateTime.ParseExact("01-12-2001", "dd-MM-yyyy", CultureInfo.InvariantCulture), lstDirectReports, "SPS001");
 
             var lst=manEmp.GetMyReports();
-            foreach (var item in lst)
+            try
             {
-                Console.WriteLine(item);
+                foreach (var item in lst)
+                {
+                    Console.WriteLine(item);
+                }
             }
+            catch (Exception e) { Console.WriteLine("Exception :"+e); }
         }
     }
 }
